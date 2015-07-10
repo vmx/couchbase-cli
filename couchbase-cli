@@ -276,6 +276,7 @@ Please use -p or set environment variable %s." % CB_PASSWORD)
 
     c = commands[cmd]()
     try:
+        print("vmx: cmd, opts: {}, {}".format(cmd, opts))
         c.runCmd(cmd, server, port, user, password, ssl, opts)
     except TimeoutException, err:
         print "TIMED OUT: command: %s: %s:%d, %s" % (cmd, server, port, err)

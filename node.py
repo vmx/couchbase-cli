@@ -1092,7 +1092,7 @@ class Node:
         if self.debug:
             print "INFO: rebalance started: %s" % output_result
 
-        sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
+        #sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
 
         print "INFO: rebalancing",
 
